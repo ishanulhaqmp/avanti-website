@@ -3,203 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects – Avanti Contracting</title>
+  <title>Terms & Conditions – Avanti Contracting</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    /* ---- PROJECT CARD IMAGE SLIDESHOW ---- */
-    .project-card {
-      background: #fff;
-      border: 1px solid #e8e8e8;
-      border-top: 3px solid #cc0000;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.12);
-    }
-
-    .project-slideshow {
-      position: relative;
-      width: 100%;
-      height: 220px;
-      overflow: hidden;
-      background: #111;
-    }
-
-    .project-slideshow img {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 0.7s ease;
-    }
-
-    .project-slideshow img.active {
-      opacity: 1;
-    }
-
-    .slide-controls {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 6px;
-      z-index: 5;
-    }
-
-    .slide-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.5);
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .slide-dot.active {
-      background: #cc0000;
-    }
-
-    .slide-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.45);
-      color: #fff;
-      border: none;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      font-size: 14px;
-      cursor: pointer;
-      z-index: 5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-      opacity: 0;
-    }
-
-    .project-slideshow:hover .slide-arrow { opacity: 1; }
-    .slide-arrow:hover { background: #cc0000; }
-    .slide-arrow.prev { left: 8px; }
-    .slide-arrow.next { right: 8px; }
-
-    .no-image-placeholder {
-      width: 100%;
-      height: 220px;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #555;
-      font-family: 'Barlow Condensed', sans-serif;
-      letter-spacing: 2px;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      gap: 0.5rem;
-    }
-
-    .no-image-placeholder svg { opacity: 0.3; }
-
-    .project-card-body {
-      padding: 1.25rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-card-top {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .project-card-body h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #111;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-      line-height: 1.3;
-    }
-
-    .project-details {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-top: auto;
-      border-top: 1px solid #f0f0f0;
-      padding-top: 0.75rem;
-    }
-
-    .project-detail {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.82rem;
-      gap: 0.5rem;
-    }
-
-    .detail-label {
-      color: #999;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.72rem;
-      white-space: nowrap;
-    }
-
-    .detail-value {
-      color: #333;
-      text-align: right;
-      font-size: 0.82rem;
-    }
-
-    .project-cat {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      border-radius: 2px;
-    }
-
-    .project-cat.civil { background: #fff0f0; color: #cc0000; }
-    .project-cat.mep { background: #f0f4ff; color: #2a4099; }
-    .project-cat.infrastructure { background: #f0fff4; color: #1a7a3a; }
-    .project-cat.oil-gas { background: #fffbf0; color: #a07000; }
-
-    .project-status {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      border-radius: 2px;
-    }
-
-    .project-status.completed { background: #e8f5e9; color: #2e7d32; }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
 
@@ -212,571 +18,223 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="projects.html" class="active">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
       <a href="contact.html" class="btn-header">Get in Touch</a>
     </div>
   </header>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="section-tag">Our Work</p>
-      <h1 class="page-hero-title">Completed Projects</h1>
-      <p style="color:#888; margin-top:0.75rem; font-size:1rem;">Delivering excellence across the UAE since 2010</p>
+      <p class="section-tag">Legal</p>
+      <h1 class="page-hero-title">Terms & Conditions</h1>
+      <p style="color:#888; margin-top:0.75rem; font-size:0.9rem;">Last updated: May 19, 2026</p>
     </div>
   </section>
 
-  <!-- STATS BAR -->
-  <section class="projects-stats">
-    <div class="projects-stats-inner">
-      <div class="proj-stat">
-        <span class="proj-stat-num" data-target="500">0</span>
-        <span class="proj-stat-label">Projects Completed</span>
+  <section class="section">
+    <div class="container terms-content">
+
+      <div class="terms-block">
+        <h2>1. Introduction</h2>
+        <p>These Terms and Conditions apply to this website and to the transactions related to our products and services. You may be bound by additional contracts related to your relationship with us or any products or services that you receive from us. If any provisions of the additional contracts conflict with any provisions of these Terms, the provisions of these additional contracts will control and prevail.</p>
       </div>
-      <div class="proj-stat">
-        <span class="proj-stat-num" data-target="14">0</span>
-        <span class="proj-stat-label">Years Experience</span>
+
+      <div class="terms-block">
+        <h2>2. Binding</h2>
+        <p>By registering with, accessing, or otherwise using this website, you hereby agree to be bound by these Terms and Conditions set forth below. The mere use of this website implies the knowledge and acceptance of these Terms and Conditions. In some particular cases, we can also ask you to explicitly agree.</p>
       </div>
-      <div class="proj-stat">
-        <span class="proj-stat-num" data-target="200">0</span>
-        <span class="proj-stat-label">Team Members</span>
+
+      <div class="terms-block">
+        <h2>3. Electronic Communication</h2>
+        <p>By using this website or communicating with us by electronic means, you agree and acknowledge that we may communicate with you electronically on our website or by sending an email to you, and you agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement, including but not limited to the requirement that such communications should be in writing.</p>
       </div>
-      <div class="proj-stat">
-        <span class="proj-stat-num">UAE</span>
-        <span class="proj-stat-label">Based in Abu Dhabi</span>
+
+      <div class="terms-block">
+        <h2>4. Intellectual Property</h2>
+        <p>We or our licensors own and control all of the copyright and other intellectual property rights in the website and the data, information, and other resources displayed by or accessible within the website.</p>
+        <h3>4.1 All Rights Reserved</h3>
+        <p>Unless specific content dictates otherwise, you are not granted a license or any other right under Copyright, Trademark, Patent, or other Intellectual Property Rights. This means that you will not use, copy, reproduce, perform, display, distribute, embed into any electronic medium, alter, reverse engineer, decompile, transfer, download, transmit, monetize, sell, market, or commercialize any resources on this website in any form, without our prior written permission.</p>
       </div>
+
+      <div class="terms-block">
+        <h2>5. Third-Party Property</h2>
+        <p>Our website may include hyperlinks or other references to other party's websites. We do not monitor or review the content of other party's websites which are linked to from this website. Products or services offered by other websites shall be subject to the applicable Terms and Conditions of those third parties. Opinions expressed or material appearing on those websites are not necessarily shared or endorsed by us.</p>
+        <p>We will not be responsible for any privacy practices or content of these sites. You bear all risks associated with the use of these websites and any related third-party services.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>6. Responsible Use</h2>
+        <p>By visiting our website, you agree to use it only for the purposes intended and as permitted by these Terms, any additional contracts with us, and applicable laws, regulations, and generally accepted online practices and industry guidelines. You must not use our website or services to publish or distribute any material which consists of malicious computer software, or conduct any systematic or automated data collection activities on or in relation to our website.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>7. Idea Submission</h2>
+        <p>Do not submit any ideas, inventions, works of authorship, or other information that can be considered your own intellectual property that you would like to present to us unless we have first signed an agreement regarding the intellectual property or a non-disclosure agreement. If you disclose it to us absent such written agreement, you grant to us a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, store, adapt, publish, translate and distribute your content in any existing or future media.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>8. Termination of Use</h2>
+        <p>We may, in our sole discretion, at any time modify or discontinue access to, temporarily or permanently, the website or any Service thereon. You agree that we will not be liable to you or any third party for any such modification, suspension or discontinuance of your access to, or use of, the website or any content that you may have shared on the website.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>9. Warranties and Liability</h2>
+        <p>This website and all content on the website are provided on an "as is" and "as available" basis and may include inaccuracies or typographical errors. We expressly disclaim all warranties of any kind, whether express or implied, as to the availability, accuracy, or completeness of the content.</p>
+        <p>Nothing on this website constitutes or is meant to constitute legal, financial or medical advice of any kind. If you require advice you should consult an appropriate professional.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>10. Privacy</h2>
+        <p>To access our website and/or services, you may be required to provide certain information about yourself as part of the registration process. You agree that any information you provide will always be accurate, correct, and up to date. We have developed a policy to address any privacy concerns you may have.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>11. Accessibility</h2>
+        <p>We are committed to making the content we provide accessible to individuals with disabilities. If you have a disability and are unable to access any portion of our website due to your disability, we ask you to give us a notice including a detailed description of the issue you encountered.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>12. Export Restrictions / Legal Compliance</h2>
+        <p>Access to the website from territories or countries where the content or purchase of the products or services sold on the website is illegal is prohibited. You may not use this website in violation of export laws and regulations.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>13. Assignment</h2>
+        <p>You may not assign, transfer or sub-contract any of your rights and/or obligations under these Terms and Conditions, in whole or in part, to any third party without our prior written consent. Any purported assignment in violation of this Section will be null and void.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>14. Breaches of These Terms and Conditions</h2>
+        <p>Without prejudice to our other rights under these Terms and Conditions, if you breach these Terms and Conditions in any way, we may take such action as we deem appropriate to deal with the breach, including temporarily or permanently suspending your access to the website, contacting your internet service provider to request that they block your access to the website, and/or commence legal action against you.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>15. Indemnification</h2>
+        <p>You agree to indemnify, defend and hold us harmless, from and against any and all claims, liabilities, damages, losses and expenses, relating to your violation of these Terms and Conditions, and applicable laws, including intellectual property rights and privacy rights.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>16. Waiver</h2>
+        <p>Failure to enforce any of the provisions set out in these Terms and Conditions and any Agreement, or failure to exercise any option to terminate, shall not be construed as waiver of such provisions and shall not affect the validity of these Terms and Conditions or of any Agreement or any part thereof.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>17. Language</h2>
+        <p>These Terms and Conditions will be interpreted and construed exclusively in English. All notices and correspondence will be written exclusively in that language.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>18. Entire Agreement</h2>
+        <p>These Terms and Conditions, together with our privacy statement and cookie policy, constitute the entire agreement between you and Avanti Contracting in relation to your use of this website.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>19. Updating of These Terms and Conditions</h2>
+        <p>We may update these Terms and Conditions from time to time. It is your obligation to periodically check these Terms and Conditions for changes or updates. Changes to these Terms and Conditions will become effective upon such changes being posted to this website.</p>
+      </div>
+
+      <div class="terms-block">
+        <h2>20. Choice of Law and Jurisdiction</h2>
+        <p>These Terms and Conditions shall be governed by the laws of the United Arab Emirates. Any disputes relating to these Terms and Conditions shall be subject to the jurisdiction of the courts of the UAE. If any part or provision of these Terms and Conditions is found by a court or other authority to be invalid and/or unenforceable under applicable law, such part or provision will be modified, deleted and/or enforced to the maximum extent permissible.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- FILTER BUTTONS -->
-  <section class="section projects-section">
-    <div class="container">
-      <div class="filter-btns">
-        <button class="filter-btn active" onclick="filterProjects('all', event)">All Projects</button>
-        <button class="filter-btn" onclick="filterProjects('civil', event)">Civil</button>
-        <button class="filter-btn" onclick="filterProjects('mep', event)">MEP</button>
-        <button class="filter-btn" onclick="filterProjects('infrastructure', event)">Infrastructure</button>
-        <button class="filter-btn" onclick="filterProjects('oil-gas', event)">Oil & Gas</button>
-      </div>
-
-      <!-- PROJECTS GRID -->
-      <div class="projects-grid">
-
-        <!-- Project 1: Al Ain Zoo -->
-        <div class="project-card" data-category="civil infrastructure">
-          <div class="project-slideshow" data-slideshow="1">
-            <img src="images/al-ain-zoo-1.jpg" class="active" alt="Al Ain Zoo 1" />
-            <img src="images/al-ain-zoo-2.jpg" alt="Al Ain Zoo 2" />
-            <img src="images/al-ain-zoo-3.jpg" alt="Al Ain Zoo 3" />
-            <img src="images/al-ain-zoo-4.jpg" alt="Al Ain Zoo 4" />
-            <img src="images/al-ain-zoo-5.jpg" alt="Al Ain Zoo 5" />
-            <img src="images/al-ain-zoo-6.jpg" alt="Al Ain Zoo 6" />
-            <button class="slide-arrow prev" onclick="changeSlide(1, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(1, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(1, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(1, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(1, 2, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(1, 3, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(1, 4, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(1, 5, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat civil">Civil</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Al Ain Zoo Safari Excavation & Filling Works</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">MIRAL LLC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">Main Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Al Ain, UAE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Medical Waste -->
-        <div class="project-card" data-category="civil infrastructure">
-          <div class="project-slideshow" data-slideshow="2">
-            <img src="images/Medical & Hazardous Waste Treatment Facility-1.jpg" class="active" alt="Medical Waste 1" />
-            <img src="images/Medical & Hazardous Waste Treatment Facility-2.jpg" alt="Medical Waste 2" />
-            <img src="images/Medical & Hazardous Waste Treatment Facility-3.jpg" alt="Medical Waste 3" />
-            <button class="slide-arrow prev" onclick="changeSlide(2, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(2, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(2, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(2, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(2, 2, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat civil">Civil</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Medical & Hazardous Waste Treatment Facility</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">Dubai Municipality</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Main Contractor</span>
-                <span class="detail-value">Cleanco Waste Treatment LLC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">Sub Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Dubai, UAE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Liwa Festival -->
-        <div class="project-card" data-category="civil">
-          <div class="project-slideshow" data-slideshow="3">
-            <img src="images/Tal Moreeb-Liwa-1.jpg" class="active" alt="Liwa Festival 1" />
-            <img src="images/Tal Moreeb-Liwa-2.jpg" alt="Liwa Festival 2" />
-            <img src="images/Tal Moreeb-Liwa-3.jpg" alt="Liwa Festival 3" />
-            <button class="slide-arrow prev" onclick="changeSlide(3, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(3, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(3, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(3, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(3, 2, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat civil">Civil</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Tal More'eb – Liwa Festival 2025</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">MIRAL LLC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">Main Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Liwa, Abu Dhabi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Tawam Roundabout -->
-        <div class="project-card" data-category="mep">
-          <div class="project-slideshow" data-slideshow="4">
-            <img src="images/Converting Tawam Roundabout-1.jpg" class="active" alt="Tawam 1" />
-            <img src="images/Converting Tawam Roundabout-2.jpg" alt="Tawam 2" />
-            <img src="images/Converting Tawam Roundabout-3.jpg" alt="Tawam 3" />
-            <img src="images/Converting Tawam Roundabout-4.jpg" alt="Tawam 4" />
-            <img src="images/Converting Tawam Roundabout-5.jpg" alt="Tawam 5" />
-            <img src="images/Converting Tawam Roundabout-6.jpg" alt="Tawam 6" />
-            <button class="slide-arrow prev" onclick="changeSlide(4, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(4, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(4, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(4, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(4, 2, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(4, 3, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(4, 4, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(4, 5, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat mep">MEP</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Converting Tawam Roundabout into Intersection with Underpass</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">DMT</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Main Contractor</span>
-                <span class="detail-value">Hilalco Wade Adams (JV)</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">MEP Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Al Ain, UAE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Al Dhafra Landfill -->
-        <div class="project-card" data-category="infrastructure">
-          <div class="project-slideshow" data-slideshow="5">
-            <img src="images/Tadweer - Hameem-1.jpg" class="active" alt="Tadweer 1" />
-            <img src="images/Tadweer - Hameem-2.jpg" alt="Tadweer 2" />
-            <img src="images/Tadweer - Hameem-3.jpg" alt="Tadweer 3" />
-            <img src="images/Tadweer - Hameem-4.jpg" alt="Tadweer 4" />
-            <img src="images/Tadweer - Hameem-5.jpg" alt="Tadweer 5" />
-            <button class="slide-arrow prev" onclick="changeSlide(5, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(5, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(5, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(5, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(5, 2, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(5, 3, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(5, 4, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat infrastructure">Infrastructure</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Developing Al Dhafra Landfill (Hameem) Roads & Main Gate</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">Tadweer Group</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">Main Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Al Dhafra, Abu Dhabi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Zayed City -->
-        <div class="project-card" data-category="mep">
-          <div class="project-slideshow" data-slideshow="6">
-            <img src="images/zayed1.jpg" class="active" alt="Zayed City 1" />
-            <img src="images/zayed2.jpg" alt="Zayed City 2" />
-            <img src="images/zayed3.jpg" alt="Zayed City 3" />
-            <button class="slide-arrow prev" onclick="changeSlide(6, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(6, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(6, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(6, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(6, 2, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat mep">MEP</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Zayed City Commercial District – Infrastructure Works for South Spine</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">Musanada</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Main Contractor</span>
-                <span class="detail-value">Tristar Engineering & Construction LLC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">MEP Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Zayed City, Abu Dhabi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7: Riyadh City -->
-        <div class="project-card" data-category="mep">
-          <div class="project-slideshow" data-slideshow="7">
-            <img src="images/Riyadh City Development –1.jpg" class="active" alt="Riyadh City 1" />
-            <img src="images/Riyadh City Development –2.jpg" alt="Riyadh City 2" />
-            <img src="images/Riyadh City Development –3.jpg" alt="Riyadh City 3" />
-            <img src="images/Riyadh City Development –4.jpg" alt="Riyadh City 4" />
-            <button class="slide-arrow prev" onclick="changeSlide(7, -1, event)">&#8249;</button>
-            <button class="slide-arrow next" onclick="changeSlide(7, 1, event)">&#8250;</button>
-            <div class="slide-controls">
-              <span class="slide-dot active" onclick="goToSlide(7, 0, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(7, 1, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(7, 2, event)"></span>
-              <span class="slide-dot" onclick="goToSlide(7, 3, event)"></span>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat mep">MEP</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>Riyadh City Development</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">Aldar Projects LLC OPC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Main Contractor</span>
-                <span class="detail-value">Tristar Engineering & Construction LLC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">MEP Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Abu Dhabi, UAE</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 8: ADNOC BU HASA (no images) -->
-        <div class="project-card" data-category="oil-gas">
-          <div class="no-image-placeholder">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.5" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Images Coming Soon</span>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-top">
-              <span class="project-cat oil-gas">Oil & Gas</span>
-              <span class="project-status completed">Completed</span>
-            </div>
-            <h3>EPCM Project Wave Component 3B: BU HASA</h3>
-            <div class="project-details">
-              <div class="project-detail">
-                <span class="detail-label">Client</span>
-                <span class="detail-value">ADNOC Onshore</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Impl. Contractor</span>
-                <span class="detail-value">Marks Project Management LLC OPC</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Role</span>
-                <span class="detail-value">Sub Contractor</span>
-              </div>
-              <div class="project-detail">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Bu Hasa, Abu Dhabi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container cta-inner">
-      <h2>Have a Project in Mind?</h2>
-      <p>Get in touch with our team and let's discuss your requirements.</p>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-top">
-      <div class="footer-brand animate-footer">
-        <a href="index.html"><img src="images/avanti_logo.png" alt="Avanti Contracting Logo" style="height:45px; width:auto;" /></a>
-        <p>Building excellence across the UAE since 2010.<br>Civil · Infrastructure · MEP · ELV · IT · Automation</p>
+  <div class="container footer-top">
+    <div class="footer-brand animate-footer">
+      <a href="index.html"><img src="images/avanti_logo.png" alt="Avanti Contracting Logo" style="height:45px; width:auto;" /></a>
+      <p>Building excellence across the UAE since 2010.<br>Civil · Infrastructure · MEP · ELV · IT · Automation</p>
+    </div>
+    <div class="footer-contact-icons animate-footer">
+      <div class="footer-icon-item">
+        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span>25E-Alnahyan, Abu Dhabi, UAE</span>
       </div>
-      <div class="footer-contact-icons animate-footer">
-        <div class="footer-icon-item">
-          <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <span>25E-Alnahyan, Abu Dhabi, UAE</span>
-        </div>
-        <div class="footer-icon-item">
-          <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-          <span>info@avanti-uae.com</span>
-        </div>
-        <div class="footer-icon-item">
-          <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg></span>
-          <span>+971 2 556 9974</span>
-        </div>
-        <div class="footer-icon-item">
-          <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-          <span>Mon–Sat, 9:00–18:00 UAE Time</span>
-        </div>
+      <div class="footer-icon-item">
+        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+        <span>info@avanti-uae.com</span>
+      </div>
+      <div class="footer-icon-item">
+        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg></span>
+        <span>+971 2 556 9974</span>
+      </div>
+      <div class="footer-icon-item">
+        <span class="footer-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <span>Mon–Sat, 9:00–18:00 UAE Time</span>
       </div>
     </div>
-    <div class="footer-social animate-footer">
-      <a href="https://ae.linkedin.com/company/avanti-contracting-&-general-maintenance" target="_blank" class="social-btn linkedin" title="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="https://www.youtube.com/channel/UCp6lrFs3oOhGaDWDqDpE3rA" target="_blank" class="social-btn youtube-btn" title="YouTube">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path fill="#FF0000" d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#ffffff" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-      </a>
-      <a href="https://www.facebook.com/people/Avanti-Contracting-and-General-Maintenance/100093228972796/" target="_blank" class="social-btn facebook" title="Facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
-      <a href="https://wa.me/971589056727" target="_blank" class="social-btn whatsapp" title="WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.524 5.855L.057 23.887l6.206-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.893 9.893 0 0 1-5.031-1.376l-.361-.214-3.732.871.944-3.63-.235-.374A9.859 9.859 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/></svg>
-      </a>
-    </div>
-    <div class="footer-divider">
-      <div class="footer-divider-line"></div>
-    </div>
-    <div class="container footer-bottom-links">
-      <div class="footer-nav-links animate-footer">
-        <a href="index.html">Home</a>
-        <span class="footer-sep">|</span>
-        <a href="about.html">About</a>
-        <span class="footer-sep">|</span>
-        <a href="services.html">Services</a>
-        <span class="footer-sep">|</span>
-        <a href="projects.html">Projects</a>
-        <span class="footer-sep">|</span>
+  </div>
+  </div>
+  <div class="footer-social animate-footer">
+  <a href="https://ae.linkedin.com/company/avanti-contracting-&-general-maintenance" target="_blank" class="social-btn linkedin" title="LinkedIn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+  </a>
+  <a href="https://www.youtube.com/channel/UCp6lrFs3oOhGaDWDqDpE3rA" target="_blank" class="social-btn youtube-btn" title="YouTube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path fill="#FF0000" d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#ffffff" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+  </a>
+  <a href="https://www.facebook.com/people/Avanti-Contracting-and-General-Maintenance/100093228972796/" target="_blank" class="social-btn facebook" title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+  </a>
+  <a href="https://wa.me/971589056727" target="_blank" class="social-btn whatsapp" title="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.524 5.855L.057 23.887l6.206-1.448A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.893 9.893 0 0 1-5.031-1.376l-.361-.214-3.732.871.944-3.63-.235-.374A9.859 9.859 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/></svg>
+  </a>
+</div>
+  <div class="footer-divider">
+    <div class="footer-divider-line"></div>
+  </div>
+  <div class="container footer-bottom-links">
+    <div class="footer-nav-links animate-footer">
+      <a href="index.html">Home</a>
+      <span class="footer-sep">|</span>
+      <a href="about.html">About</a>
+      <span class="footer-sep">|</span>
+      <a href="services.html">Services</a>
+      <span class="footer-sep">|</span>
+      <a href="projects.html">Projects</a>
+      <span class="footer-sep">|</span>
         <a href="contact.html">Contact</a>
-        <span class="footer-sep">|</span>
-        <a href="certifications.html">Certifications</a>
-        <span class="footer-sep">|</span>
-        <a href="terms.html">Terms & Conditions</a>
-        <span class="footer-sep">|</span>
-        <a href="careers.html">Careers</a>
-      </div>
-      <div class="footer-copy animate-footer">
-        <p>© 2024 Avanti Contracting. All rights reserved.</p>
-      </div>
+      <span class="footer-sep">|</span>
+      <a href="certifications.html">Certifications</a>
+      <span class="footer-sep">|</span>
+      <a href="terms.html">Terms & Conditions</a>
+      <span class="footer-sep">|</span>
+      <a href="careers.html">Careers</a>
     </div>
-  </footer>
+    <div class="footer-copy animate-footer">
+      <p>© 2024 Avanti Contracting. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script>
-    // ---- SLIDESHOW ----
-    const slideshowState = {};
+<script>
+  const footerObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 200);
+      }
+    });
+  }, { threshold: 0.2 });
 
-    function initSlideshows() {
-      document.querySelectorAll('.project-slideshow').forEach(ss => {
-        const id = ss.getAttribute('data-slideshow');
-        slideshowState[id] = { current: 0, timer: null };
-        startAutoSlide(id);
-      });
-    }
+  document.querySelectorAll('.animate-footer').forEach(el => {
+    footerObserver.observe(el);
+  });
 
-    function getSlideshow(id) {
-      return document.querySelector(`.project-slideshow[data-slideshow="${id}"]`);
-    }
+  const dividerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.5 });
 
-    function showSlide(id, index) {
-      const ss = getSlideshow(id);
-      if (!ss) return;
-      const imgs = ss.querySelectorAll('img');
-      const dots = ss.querySelectorAll('.slide-dot');
-      if (!imgs.length) return;
-      index = (index + imgs.length) % imgs.length;
-      imgs.forEach(img => img.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
-      imgs[index].classList.add('active');
-      if (dots[index]) dots[index].classList.add('active');
-      slideshowState[id].current = index;
-    }
-
-    function changeSlide(id, dir, e) {
-      if (e) e.stopPropagation();
-      const state = slideshowState[id];
-      clearInterval(state.timer);
-      showSlide(id, state.current + dir);
-      startAutoSlide(id);
-    }
-
-    function goToSlide(id, index, e) {
-      if (e) e.stopPropagation();
-      const state = slideshowState[id];
-      clearInterval(state.timer);
-      showSlide(id, index);
-      startAutoSlide(id);
-    }
-
-    function startAutoSlide(id) {
-      const state = slideshowState[id];
-      state.timer = setInterval(() => {
-        showSlide(id, state.current + 1);
-      }, 3500);
-    }
-
-    // ---- FILTER ----
-    window.filterProjects = function(category, e) {
-      const cards = document.querySelectorAll('.project-card');
-      const btns = document.querySelectorAll('.filter-btn');
-      btns.forEach(btn => btn.classList.remove('active'));
-      if (e && e.target) e.target.classList.add('active');
-      cards.forEach(card => {
-        const categories = card.dataset.category.split(' ');
-        if (category === 'all' || categories.includes(category)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-    // ---- FOOTER ANIMATION ----
-    const footerObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), index * 200);
-        }
-      });
-    }, { threshold: 0.2 });
-    document.querySelectorAll('.animate-footer').forEach(el => footerObserver.observe(el));
-
-    const dividerObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('animated'); });
-    }, { threshold: 0.5 });
-    const divider = document.querySelector('.footer-divider-line');
-    if (divider) dividerObserver.observe(divider);
-
-    // ---- COUNTER ANIMATION ----
-    function animateCounters() {
-      document.querySelectorAll('.proj-stat-num[data-target]').forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const step = target / (2000 / 16);
-        let current = 0;
-        const timer = setInterval(() => {
-          current += step;
-          if (current >= target) { counter.textContent = target + '+'; clearInterval(timer); }
-          else { counter.textContent = Math.floor(current); }
-        }, 16);
-      });
-    }
-    const statsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) { animateCounters(); statsObserver.disconnect(); } });
-    }, { threshold: 0.5 });
-    const statsSection = document.querySelector('.projects-stats');
-    if (statsSection) statsObserver.observe(statsSection);
-
-    // ---- INIT ----
-    document.addEventListener('DOMContentLoaded', initSlideshows);
-  </script>
-
+  const divider = document.querySelector('.footer-divider-line');
+  if (divider) dividerObserver.observe(divider);
+</script>
 </body>
 </html>
